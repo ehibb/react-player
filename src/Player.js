@@ -153,17 +153,6 @@ export default class Player extends Component {
       }
       return
     }
-    const isFraction = !type ? (amount > 0 && amount < 1) : type === 'fraction'
-    if (isFraction) {
-      // Convert fraction to seconds based on duration
-      const duration = this.player.getDuration()
-      if (!duration) {
-        console.warn('ReactPlayer: could not seek using fraction – duration not yet available')
-        return
-      }
-      this.player.seekTo(duration * amount, keepPlaying)
-      return
-    }
     this.player.seekTo(amount, keepPlaying)
   }
 
