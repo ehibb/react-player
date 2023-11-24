@@ -1,3 +1,9 @@
+This is a FORK of react-player. 
+
+The purpose of the fork is to change how `seekTo` operates. 
+In the current version `seekTo` treats any number between 0 and 1 as a fraction, which is not ideal for my use case. 
+
+
 <h1 align='center'>
   ReactPlayer
 </h1>
