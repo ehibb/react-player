@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ehibb",
+    "registry": "https://npm.pkg.github.com/@ehibb"
   },
   "scripts": {
     "clean": "rimraf lib lazy demo coverage *.d.ts",
