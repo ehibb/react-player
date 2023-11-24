@@ -4,6 +4,9 @@
   "description": "A React component for playing a variety of URLs, including file paths, YouTube, Facebook, Twitch, SoundCloud, Streamable, Vimeo, Wistia and DailyMotion",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ehibb
+  },
   "scripts": {
     "clean": "rimraf lib lazy demo coverage *.d.ts",
     "start": "cp -r examples/react/public/ demo & npm run build:lib --watch=forever & builder examples/react/src/index.js --format=iife --bundle --outdir=demo --watch --servedir=demo --livereload",
@@ -27,14 +30,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cookpete/react-player.git"
+    "url": "git+https://github.com/ehibb/react-player.git"
   },
   "author": "Pete Cook (https://github.com/cookpete)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cookpete/react-player/issues"
+    "url": "https://github.com/ehibb/react-player/issues"
   },
-  "homepage": "https://github.com/cookpete/react-player",
+  "homepage": "https://github.com/ehibb/react-player",
   "peerDependencies": {
     "react": ">=16.6.0"
   },
